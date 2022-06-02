@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Bankit/dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/bt-3-logo-svg-vector.svg" alt="">
+        </div>
+        <a href="#" class="logout">Log Out</a>
+    </header>
+    <section>
+        <img src="./images/person.png" alt="">
+        <div class="details">
+            <h2 class="name">Omodaratan Tony</h2>
+            <h3 class="account-number">Acc No: 2118900162</h3>
+        </div>
+        
+    </section>
+    <main>
+        <h3 class="dash-heading">Dashboard</h3>
+        <div class="grid-dashboard">
+            <div class="balance">
+                <div class="balance-2">
+                    <h2>My Balance</h2>
+                    <div class="logo">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </div>
+                </div>
+                <div class="my-money">
+                    <p></p>
+                </div>
+            </div>
+            <div class="received">
+                <div class="money-in">
+                    <p>Income</p>
+                    <i class="fas fa-money-bill"></i>
+                </div>    
+                <div class="income">    
+                    <p></p>
+                </div>
+            </div>
+            <div class="spent">
+                <div class="money-out">
+                    <p>Expenses</p>
+                    <i class="fas fa-money-bill"></i>
+                </div>
+                <div class="expense">
+                    <p></p>
+                </div>
+            </div>
+            <div class="latest-transaction">
+                <h3>Last 5 transactions</h3>
+            </div>
+            <div class="loan-div">
+                <h3>Loan Request</h3>
+                <input type="number" placeholder="Amount" class="loan-amount">
+                <select name="loan-duration" id="loan">
+                    <option value="">choose Package</option>
+                    <option value="3-month">3 Months</option>
+                    <option value="6-month">6 Months</option>
+                    <option value="12-month">12 Months</option>
+                </select>
+                <button class="loan-req-btn">Request</button>
+            </div>
+            <div class="actions">
+                <ul>
+                    <li><i class="fas fa-backward"></i><a href="#" class="transfer">Transfer</a></li>
+                    <li><i class="fas fa-forward"></i><a href="#" class="deposit">Deposit</a></li>
+                    <li><i class="fas fa-backward"></i><a href="#" class="withdraw">Withdraw</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="transfer-section">
+        <i class="fas fa-times"></i>
+        <h3>Transfer</h3>
+        <input type="text" placeholder="Username" class="receiver-username">
+        <p class="message"></p>
+        <input type="text" readonly placeholder="Receiver fullname" class="receiver-account">    
+        <input type="number" placeholder="Amount" class="transfer-amount">
+        <button class="transfer-btn">Transfer</button>
+    </div>
+
+    <div class="deposit-section">
+        <i class="fas fa-times"></i>
+        <h3>Deposit</h3>
+        <input type="number" placeholder="Amount" class="deposit-money">
+        <button class="deposit-btn">Deposit</button>
+    </div>
+
+    <div class="withdraw-section">
+        <i class="fas fa-times"></i>
+        <h3>Withdraw</h3>
+        <input type="number" placeholder="Amount" class="withdraw-money">
+        <button class="withdraw-btn">Withdraw</button>
+    </div>
+    <div class="loading">
+        <p class="loading-text">loading...</p>
+        <i class="fas fa-circle-notch"></i>
+    </div>
+
+    <div class="message-div">
+        <p class="loan-message">erfvrfr</p>
+        <i class="fas fa-times"></i>
+    </div>
+
+
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

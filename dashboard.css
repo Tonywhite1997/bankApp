@@ -1,0 +1,477 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    margin: 0 2em;
+    background: rgb(60, 60, 219);
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+}
+
+header a:hover{
+    background-color: black;
+}
+
+.actions a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+
+header{
+    height: 15%;
+    width: 100vw;
+    background-color: white;
+    border-bottom: 1px solid rgb(26, 26, 59);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    width: 120px;
+    padding: 0 1em;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    background: rgb(212, 212, 255);
+    gap: 1em;
+    /* margin-top: 1em; */
+    height: 15vh;
+}
+
+section img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 1em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+.dash-heading{
+    margin-top: 1em;
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(85, 85, 245);
+}
+
+.grid-dashboard{
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: 1em;
+    /* margin-left: 1em; */
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 1em;
+}
+
+.balance{
+    box-shadow: 0 0 5px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+.balance-2{
+    position: relative;
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+}
+
+.balance-2 h2{
+    margin-left: .2em;
+    margin-top: .2em;
+}
+
+.my-money{
+    /* border: 1px solid red; */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: green;
+}
+
+.fa-cc-mastercard{
+    font-size: 2rem;
+    color: rgba(0, 128, 0, 0.854);
+    margin-right: .2em;
+    margin-top: .2em;
+}
+
+.received{
+    /* border: 1px solid red; */
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 5px;
+}
+
+.money-in{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.money-in p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: green;
+    margin-left: .2em;
+}
+
+.money-in i{
+    font-size: 2rem;
+    margin-right: .2em;
+    color: rgba(0, 128, 0, 0.854);
+}
+
+.income{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+}
+
+.spent{
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 5px;
+    /* margin-right: 1.5em; */
+}
+
+.money-out{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.money-out p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: red;
+    margin-left: .2em;
+}
+
+.money-out i{
+    margin-right: .2em;
+    font-size: 2rem;
+    color: rgba(255, 0, 0, 0.74);
+}
+
+.expense{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+}
+
+.latest-transaction{
+    min-height: 30vh;
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.latest-transaction h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: .5em;
+}
+
+.latest-transaction p{
+    margin-top: .5em;
+    font-size: 1rem;
+    margin-left: .5em;
+}
+
+.loan-div{
+    background-color: rgb(229, 229, 250);
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em
+}
+
+.loan-div h3{
+    font-size: 1.3rem;
+    color: rgb(113, 113, 237);
+}
+
+.loan-div input{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.loan-div select{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.loan-div button{
+    width: 80%;
+    height: 30px;
+    background-color: rgb(97, 97, 254);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    transition: all 500ms ease-in-out;
+    margin-bottom: 1em;
+}
+
+.actions{
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 5px;
+    /* margin-right: 1.5em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+
+.fa-backward{
+    color: red;
+    margin-right: .5em;
+}
+.fa-forward{
+    color: green;
+    margin-right: .5em;
+}
+
+.fa-times{
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.transfer-section{
+    position: fixed;
+    min-height: 40%;
+    width: 40%;
+    left: 30%;
+    top: 25%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgb(211, 211, 252);
+    border-radius: 5%;
+}
+
+.transfer-section input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.transfer-section button{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(104, 104, 248);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    transition: all 500ms ease-in-out;
+}
+
+.deposit-section{
+   position: fixed;
+   height: 40%;
+   background-color: rgb(198, 198, 254);
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 40%;
+   border-radius: 5px;
+   top: 25%;
+   left: 30%;
+   border: 5px;
+   gap: 1em;
+}
+
+.deposit-section input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.deposit-section button{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(104, 104, 248);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+}
+
+.withdraw-section{
+    position: fixed;
+    height: 40%;
+    background-color: rgb(198, 198, 254);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-radius: 5px;
+    top: 25%;
+    left: 30%;
+    border: 5px;
+    gap: 1em;
+}
+
+.withdraw-section input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.withdraw-section button{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(104, 104, 248);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+}
+
+button:hover{
+    background-color: black;
+}
+
+.loading{
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10rem;
+    height: 50px;
+    background-color: black;
+}
+
+.loading p{
+    color: white;
+}
+
+.loading .fa-circle-notch{
+    font-size: 2rem;
+    color: white;
+    animation: rotation 300ms linear infinite
+}
+
+.message-div{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 15%;
+    transform: translate(15%);
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+.message-div p{
+    width: 90%;
+    color: black;
+}
+
+@keyframes rotation{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .grid-dashboard{
+        grid-template-columns: 1fr 1fr;
+        min-width: 100%;
+        
+    }
+    body{
+        overflow-x: visible;
+    }
+    /* .money-in{
+        justify-content: center;
+        padding: 0;
+    }
+    .money-out{
+        justify-content: center;
+    }
+    .latest-transaction{
+
+    } */
+
+
+}

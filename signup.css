@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.fa-bars{
+    display: none;
+}
+.fa-times{
+    display: none;
+}
+
+header{
+    height: 15vh;
+    border-bottom: 2px solid rgb(15, 19, 119);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding-left: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.logo2 img{
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: 120px;
+}
+
+.logo h2{
+    display: none;
+    border: 3px solid black;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-color: black;
+    border-bottom-color: red;
+    border-left: none;
+    border-right: none;
+}
+.menu-div{
+    display: flex;
+    gap: 3em;
+    font-size: 1.2rem;
+    padding-right: 5em;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1em;
+    color: rgb(15, 19, 119);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.red{
+    border: 3px solid black;
+    border-top-color: green;
+    border-bottom-color: red;
+    border-left: none;
+    border-right: none;
+    font-size: 1.25rem;
+}
+
+.purple{
+    border: 3px solid black;
+    border-top-color: red;
+    border-bottom-color: green;
+    border-left: none;
+    border-right: none;
+}
+
+
+.button a{
+    color: rgb(15, 19, 119);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sign-up{
+    height: 45px;
+    width: 150px;
+    background-color: rgb(84, 84, 225);
+    border-radius: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.sign-up:hover{
+    background-color: black;
+    transition: all 500ms ease-in-out;
+}
+
+main{
+    height: 85vh;
+    width: 100vw;
+    color: white;
+    background-image: linear-gradient(to right,
+    rgba(0,0,0, .1),
+    rgba(0,0,0, .5),
+    rgba(0,0,0, .1)),
+    url(./images/banking.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+form{
+    width: 50%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h2{
+    background-color: #9f9ff8;
+    width: 50%;
+    padding: .5em 0;
+    margin-top: 1em;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+#username{
+    margin-bottom: .1em;
+}
+
+form p{
+    margin-bottom: .5em;
+    margin-top: 0;
+}
+
+label{
+    margin-bottom: .2em;
+    font-size: 1.2rem;
+}
+
+input{
+    margin-bottom: 1em;
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline-color: blue;
+    outline-width: 5px;
+}
+
+
+
+.register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(84, 84, 225);
+    border: none;
+    color: white;
+}
+
+button:hover{
+    background-color: black;
+    transition: all 500ms ease-in-out;
+}
+
+button:focus{
+    outline-color: blue;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    body{
+        overflow-x: hidden;
+    }
+    .fa-bars{
+        display: initial;
+        position: absolute;
+        right: 1em;
+        font-size: 2rem;
+    }
+
+    .fa-times{
+        position: absolute;
+        display: none;
+        right: 1em;
+        font-size: 2rem;
+    }
+
+    header{
+        position: relative;
+    }
+    .menu-div{
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        background-color: white;
+        top: -1000px;
+        flex-direction: column;
+        transition: all 500ms ease-in-out;
+    }
+
+    .menu{
+        margin-left: 4em;
+        margin-top: 2em;
+    }
+    .button{
+        margin-left: 4em;
+    }
+    .button{
+        margin-left: 4em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo{
+        padding: 0;
+    }
+    .menu-div{
+        justify-content: center;
+        width: 100vw;
+        min-height: 100vh;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .menu{
+        margin: 0px;
+        padding: 0px;
+        margin-top: 1em;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button{
+        width: 100vw;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+    form{
+        width: 80%;
+    }
+    form h2{
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    form input{
+        width: 80%;
+    }
+    .register{
+        margin-bottom: 1em;
+    }
+    .register button{
+        width: 80%;
+    }
+}
