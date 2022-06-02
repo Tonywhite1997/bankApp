@@ -109,7 +109,7 @@ header{
 }
 
 main{
-    height: 85vh;
+    min-height: 85vh;
     width: 100vw;
     color: white;
     background-image: linear-gradient(to right,
@@ -180,6 +180,7 @@ input:focus{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 2em;
 }
 button{
     width: 60%;
